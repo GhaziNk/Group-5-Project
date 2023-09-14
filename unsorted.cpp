@@ -1,3 +1,4 @@
+// Refecrence: Dale, Nell, PhD, and Chip Weems. "Chapter 3." C++ Plus Data Structures, Sixth Edition, 2018.
 // Implementation file for Unsorted.h
 
 #include "unsorted.h"
