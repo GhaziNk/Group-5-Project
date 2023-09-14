@@ -1,3 +1,4 @@
+// Refecrence: Dale, Nell, PhD, and Chip Weems. "Chapter 3." C++ Plus Data Structures, Sixth Edition, 2018.
 // The following definitions go into file ItemType.cpp. 
 #include <fstream>
 #include <iostream>
