@@ -7,6 +7,11 @@ public:
     Assignment (string name, string username, string desc, int priority);
     ~Assignment();
     string GetAssignmentName();
+    void SetAssignmentName(string newName);
+    string GetAssignmentMemberName();
+    void SetAssignmentMemberName(string newName);
+    string GetAssignmentDesc();
+    void SetAssignmentDesc(string newDesc);
 
 
 private:
@@ -31,4 +36,28 @@ Assignment::Assignment(string name, string username, string desc, int priority) 
     assignmentDesc = desc;
     assignedUserName = username;
     priorityLevel = priority;
+}
+
+string Assignment::GetAssignmentName() {
+    return assignmentName;
+}
+
+void Assignment::SetAssignmentName(string newName) {
+    assignmentName = newName;
+}
+
+string Assignment::GetAssignmentMemberName() {
+    return assignedUserName;
+}
+
+void Assignment::SetAssignmentMemberName(string newName) {
+    assignedUserName = newName;
+}
+
+string Assignment::GetAssignmentDesc() {
+    return assignmentDesc;
+}
+
+void Assignment::SetAssignmentDesc(string newDesc) {
+    assignmentDesc = newDesc;
 }
