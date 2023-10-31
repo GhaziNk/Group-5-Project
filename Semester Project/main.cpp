@@ -18,6 +18,42 @@ void outputInstructionList() {
             "0: Quit Program\n";
 }
 
+//Instruction Task Functions
+void createNewTask() {
+    string newTaskName;
+    string newTaskDesc;
+    string newTaskMembers;
+    int newTaskPriority;
+
+    cout << "What is the name of your new task?\n";
+    cin >> newTaskName;
+
+    cout << "Give a description of the new task\n";
+    cin >> newTaskDesc;
+
+    cout << "Who'll be assigned to the new task?\n";
+    cin >> newTaskMembers;
+
+    cout << "What level of priority will it have?\n";
+    cin >> newTaskPriority;
+
+    Assignment(newTaskName,newTaskMembers,newTaskDesc,newTaskPriority);
+
+    //save the info onto the file
+
+}
+
+void getCurrentTasks() {
+    cout << "This is a stub\n";
+}
+
+void updateTask() {
+    cout << "This is a stub\n";
+}
+
+void deleteTask() {
+    cout << "This is a stub\n";
+}
 int main() {
 
     bool quit = false;
@@ -28,7 +64,7 @@ int main() {
     savefile.open ("savefile");
 
     //read the contents of the savefile
-    
+
 
     cout << "Welcome to Team V's Task Manager!\n";
 
@@ -43,16 +79,16 @@ int main() {
                 cout << "Error: bad input. Please try again.\n";
                 break;
             case 1:
-                cout << "This is a stub\n";
+                createNewTask();
                 break;
             case 2:
-                cout << "This is a stub\n";
+                getCurrentTasks();
                 break;
             case 3:
-                cout << "This is a stub\n";
+                updateTask();
                 break;
             case 4:
-                cout << "This is a stub\n";
+                deleteTask();
                 break;
             case 9:
                 outputInstructionList();
